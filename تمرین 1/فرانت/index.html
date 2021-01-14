@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Bookstore</title>
+    <link rel="stylesheet" href="index.css",type = "text/css">
+
+</head>
+<body>
+    <!-- background image -->
+    <img class="background" src="wp1915248.jpg">
+
+    <!-- form with inputs and buttons -->
+    <form class="form">
+        <h3 id="main">Harvard University Register</h3>
+        <input placeholder="enter your firstname" type="text" name="firstname">
+        <input placeholder="enter your lastname" type="text" name = "lastname">
+        <input placeholder="enter your nationalcode" type="text" name = "nationalcode">
+        <input placeholder="enter your phone" type="text" name = "phone">
+        <input placeholder="enter your age" type="text" name = "age">
+        <div class="radio">
+            <p>Male</p>
+            <input type="radio" name="gender" value="male">
+            <p>Female</p>
+            <input type="radio" name="gender" value="female">
+        </div>
+        <input class="fileInput" type="file" name = "avatar">
+        <button type="submit">Register</button>
+        <button type="button">Show List</button>
+    </form>
+    <!-- create div to table add to it -->
+    <div id="table"></div>
+
+</body>
+<!-- script for ajax and local js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</html>
